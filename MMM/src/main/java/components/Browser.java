@@ -18,16 +18,22 @@ public class Browser {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		updateReport("info","BrowserSetup","");
+		
+		
 	}
 
 	public void luanchUrl() throws Exception {
 		driver.get("https://www.cleartrip.com/");
 		updateReport("info","launch Browser","");
+		
+		
 	}
 
 	public void maximizeBrowser() throws Exception {
 		driver.manage().window().maximize();
 		updateReport("info","maximazie browser","");
+		updateReport("info","launch Browser","");
+		
 
 	}
 
